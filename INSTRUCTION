@@ -1,0 +1,88 @@
+Core python scripts that include key algoritms and protocols of FISD
+
+# Some of the fold paths in the scripts need to be created manually or customized to specific paths
+# Non-open source scripts and support files can be obtained by contacting the author
+
+
+### Auto_Encoder.py
+Convolutional autoencoder neural network design, CAE model training and embedded data generation
+
+
+### Dataset_Build.py
+Generate GPSMs meta information for training and testing the entire FISD deep learning models
+
+
+### Embedding.py
+Algorithms that convert MS/MS spectrum data (with identified peptide backbone and glycan composition)
+into high-dimension matrix as the input layer of the CAE model based on motif features
+
+
+### Feature_Explain.py
+Algorithms that designed to discover new features in the CAE encoded data via SHAP strategy
+
+
+### Feature_Prediction.py
+Provide with basic methods to handle motif features and calculate customized probability
+based on glycan structure definition rules
+
+
+### Glycan_Formula.py
+Provide with basic methods to handle glycan formula and composition
+
+
+### Glycan_Sulfated_GlycReSoft.py
+Create sulfated glycan compositions for the sulfated GPSMs estimation using GlycReSoft
+
+
+### Glycan_Sulfated_Peptides_GlycReSoft.py
+Protocols to extract peptide backbones for the sulfated GPSMs estimation using GlycReSoft
+and load sulfated GPSMs from the search results
+
+
+### Glycan_Validation.py
+Compare and generate glycan compositions based on
+glycan structure definition rules and software include pGlyco3 and MSFragger-Glyco
+
+
+### GlycanDB_Builder.py
+Create exhaustive glycan structures based on targeted glycan branches and definition rules
+
+
+### MLP_Classifier.py
+Neural network design of the MLP model and model training/testing on train/test split of GPSMs
+
+
+### Model_Estimation.py
+Brief view of the estimation results of the MLP model
+
+
+### Model_Test_StdGP.py
+Algorithms for testing the model performance on StrucGP standard glycoproteins data
+
+
+### Model_Test_Sup.py
+Algorithms for testing the model performance on GPSMs that contain motif features that
+exceed StrucGP's consideration
+
+
+### Peptide_Backbone.py
+Basic methods for handling peptide backbone including sequence and modifications
+
+
+### Struct_Diag_Stats.py
+Methods to conduct statistics of the glycan structure-diagnosis results on test set split and StrucGP standard glycoproteins
+
+
+### Structure_Diagnosis.py
+Algorithms for glycan structure diagnosis based on model-predicted motif features and
+structure-diagnostic fragment annotation in the MS/MS spectra
+
+
+### Training_Set_Supplement.py
+Protocols for extracting GPSMs that contain motif features that exceed StrucGP's consideration
+from the results of mouse five tissues reported by pGlyco3 and MSFragger-Glyco as training/testing meta data
+
+
+### Traintest_GPSM_Filtration.py
+Protocols for extracting GPSMs that co-reported by pGlyco3, MSFragger-Glyco and StrucGP
+as training/testing meta data
